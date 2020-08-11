@@ -16,10 +16,20 @@ $(function () {
 
         $.each(items, function (i, item) {
             $(".gallery").append("<div class='image-frame'>" + "<a target='_blank'" + " href='"+ item.multimedia[3].url +"'>" + "<img src='"+item.multimedia[3].url+"' alt='Cinque Terre' width='600' height='400'>" + "</a>" + "</div>"); 
-            console.log(item.title);       
+            // console.log(item.title);       
         });
         }
     });
+
+    $.ajax({
+        type: 'GET',
+        url: 'http://cors-anywhere.herokuapp.com/localhost:44355/api/Students',
+        success: function(results){
+            var students = results.results;
+
+            console.log(students);
+        }
+    })
 });
 
 
