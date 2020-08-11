@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page1</title>
+    <style>
+        body{
+            font-family:'HigherJump';
+        }
+        @font-face {
+            font-family:HigherJump;
+            src: url(assets/fonts/HigherJump-8MZ7M.ttf);
+        }
+        div.container{
+            background-color: #d4e2e4;
+            padding: 12px;
+            border-radius: 15px;
+        }
+        div.box{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(162, 209, 209);
+            border: 1px solid rgb(46, 76, 121);
+            margin:5px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 15%;   
+        }
+        div.box:hover{
+            font-weight: 700;
+            border:1px solid crimson;
+            /* font-size: 1.2em; */
+            background-color: rgb(32, 238, 238);
+        }
+    </style>
+</head>
+<body>
+    <h1>Basic CSS Styling</h1>
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+        <div class="box">Box6</div>
+        <div class="box">Box7</div>
+        <div class="box">Box8</div>
+        <div class="box">Box9</div>
+        <div class="box">Box10</div>
+    </div>
+    <p>Click <a href="index.html">here</a> to go to index</p>
+    <script>
+        var elements = document.getElementsByClassName("box");
+        for(let i = 0; i< elements.length; i++)
+        {
+            elements[i].addEventListener("click", () => {alert('you clicked')});
+        }
+    </script>
+</body>
+</html>
