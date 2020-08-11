@@ -61,13 +61,15 @@ Table of Contents (up to date)
   - Controller - Hadnles request, fetches data, sends everything to view
 ```
 
-  ## CSS
+## CSS
 
-  ## Javascript
+## Javascript
   
-  ### Shortcuts
+### Shortcuts
+  ```
   Home/End                  Start/End Line
   Control Right/Left        Move One Word
   Shift Home/End            Select Whole Line
   Control-Shift Home/End    Select to Start/End of Document
   Alt up/down               Move Whole Line up/down
+```
