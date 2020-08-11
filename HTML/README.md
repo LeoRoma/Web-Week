@@ -25,23 +25,23 @@ Table of Contents (up to date)
 - Skeleton of page
 
 - HTML
-​	 DOCTYPE => HTML5
-​	 HEAD
-​		META description
-​			 viewport
-	<script>
-        Javascript goes here or at foot of page, just above closing "Body"tag
-	</script>
+    - DOCTYPE => HTML5
+​    - HEAD
+​	  - META description
+​	    -	 viewport
+	- <script>
+    -    Javascript goes here or at foot of page, just above closing "Body"tag
+	- </script>
 
-    <style>
-        CSS goes Here
-    </style>
-​		TITLE
-​	BODY
-​		TAGS <h1>
-​		ATTRIBUTES <img src="..." width> <a href="...">
+    - <style>
+    -    CSS goes Here
+    - </style>
+​	- TITLE
+​	- BODY
+​		- TAGS <h1>
+​		- ATTRIBUTES <img src="..." width> <a href="...">
 
-CSS
+- CSS
 - Styling
   - Colours, Width, Content, Padding, Border, Margin, Outline, Shadow, Curvature, Fonts
     NEXT ITEM ON SCREEN |<margin>|<border>|<padding>This is my text<padding>|<border>|<margin>
@@ -65,3 +65,8 @@ CSS
 
   ## Javascript
   
+  ### Shortcuts
+  Home/End              Start/End Line
+  Control Right/Left    Move One Word
+  Shift Home/End        Select Whole Line
+  Control-Shift- 
