@@ -19,54 +19,55 @@ Table of Contents (up to date)
     - Doctype
   
 ## HTML
+```
 - HTML => Hypertext Markup Language
 
 - Structure
 - Skeleton of page
 
 - HTML
-    - DOCTYPE => HTML5
-​    - HEAD
-​	  - META description
-​	    -	 viewport
-	- <script>
-    -    Javascript goes here or at foot of page, just above closing "Body"tag
-	- </script>
+    DOCTYPE => HTML5
+​    HEAD
+​	    META description
+​	    	 viewport
+	 <script>
+        Javascript goes here or at foot of page, just above closing "Body"tag
+	 </script>
 
-    - <style>
-    -    CSS goes Here
-    - </style>
-​	- TITLE
-​	- BODY
+     <style>
+        CSS goes Here
+     </style>
+​	 TITLE
+​	 BODY
 ​		- TAGS <h1>
 ​		- ATTRIBUTES <img src="..." width> <a href="...">
 
-- CSS
-- Styling
-  - Colours, Width, Content, Padding, Border, Margin, Outline, Shadow, Curvature, Fonts
+ CSS
+ Styling
+   Colours, Width, Content, Padding, Border, Margin, Outline, Shadow, Curvature, Fonts
     NEXT ITEM ON SCREEN |<margin>|<border>|<padding>This is my text<padding>|<border>|<margin>
                                                     |<content>
-- Bootstrap
-  - Packs in all well-used CSS effects and packages them into named libraries inside Bootstrap
-    - Column default split into fractions of 12     sm-3 means a width of 3/12 = 1/4 => 25%
+ Bootstrap
+   Packs in all well-used CSS effects and packages them into named libraries inside Bootstrap
+     Column default split into fractions of 12     sm-3 means a width of 3/12 = 1/4 => 25%
 
-- ASP Microsoft Active Server Pages
-  - .asp (older)
-  - .aspx (current XML-based files!)
+ ASP Microsoft Active Server Pages
+   .asp (older)
+   .aspx (current XML-based files!)
   
 - ASP MVC
   - Model - Data layer => SQL table mapped to Classes 
   - View - Final Data which user sees
   - Controller - Hadnles request, fetches data, sends everything to view
-
-
+```
 
   ## CSS
 
   ## Javascript
   
   ### Shortcuts
-  Home/End              Start/End Line
-  Control Right/Left    Move One Word
-  Shift Home/End        Select Whole Line
-  Control-Shift- 
+  Home/End                  Start/End Line
+  Control Right/Left        Move One Word
+  Shift Home/End            Select Whole Line
+  Control-Shift Home/End    Select to Start/End of Document
+  Alt up/down               Move Whole Line up/down
