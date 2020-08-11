@@ -1,0 +1,31 @@
+.navbar {
+    background-color:rgb(146, 189, 189);
+    background-image: none;
+    background-repeat: no-repeat;
+}
+
+div.gallery-wrapper{
+    margin-left: 8%;
+    margin-right: auto;
+    width: 90%;
+}
+
+div.image-frame {
+    margin: 10px;
+    border: 3px solid black;
+    float: left;
+    width: 305px;
+    height: 200px;
+    box-shadow: 10px 5px #888888;
+    flex-direction: column
+}
+  
+div.image-frame:hover {
+    border: 1px solid #777;
+}
+  
+div.image-frame img {
+    width: 100%;
+    height: 100%;
+}
+   
