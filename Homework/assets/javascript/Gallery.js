@@ -9,7 +9,12 @@ $(function () {
         success: function (results) {
         var items = results.results;
         $.each(items, function (i, item) {
-            $(".gallery").append("<div class='image-frame'>" + "<a target='_blank'" + " href='"+ item.multimedia[3].url +"'>" + "<img src='"+item.multimedia[3].url+"' alt='Cinque Terre' width='600' height='400'>" + "</a>" + "</div>");      
+            $(".gallery").append("<div class='image-frame'>" + 
+                                 "<a target='_blank'" + 
+                                 " href='"+ item.multimedia[0].url +"'>" + 
+                                 "<img src='"+item.multimedia[3].url+"' width='600' height='400'>" + 
+                                 "</a>" + 
+                                 "</div>");      
         });
         }
     });

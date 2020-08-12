@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/style/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/javascript/Home.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Omni Pages</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Grid.html">Grid</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Gallery.html">Gallery</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="container" id="javascript-extendable">
+        <h1 style="font-size: 65px; color: #218BFF;">Welcome to Omni-Pages</h1>
+        <p style="margin-top: 55px; font-size: 55px;">Congratulations you are the <strong>1000th </strong>visitor of this website</p>
+        <p style="font-size: 45px;"><em>You have won <strong>£1000!!!</strong> Please click here to collect your prize</em></p>
+        <button id="emcee">Click Me!</button>
+    </div>
+    
+    <div></div>
+    <script>
+        var caller = $("#emcee"),
+            box = $("#box");
+
+        function foo()
+        {
+            var randX = Math.floor(Math.random() * (window.innerWidth - 1));
+            var randY = Math.floor(Math.random() * (window.innerHeight - 1));
+            console.log([randX, randY]);
+            caller.stop().animate({"left": randX + "px", "top": randY + "px"});
+        }
+
+        $(document).ready(function() {
+            
+            caller.on('mouseenter', foo);
+            caller.on('click', function(){
+                alert('You Won!');
+            });
+            
+        });
+
+        
+    </script>
+</body>
+</html>

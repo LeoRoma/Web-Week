@@ -10,30 +10,34 @@
     <title>Grid</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">Omni Pages</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="Gallery.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Grid.html">Grid</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-          
-          </ul>
-        </div>
-    </nav>
 
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">Omni Pages</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Grid.html">Grid</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Gallery.html">Gallery</a>
+          </li>
+
+        </ul>
+      </div>
+  </nav>
+
+
+    
     <div class="container">
+      <h1 style="font-size: 55px;">Kitten Garden</h1>
       <form action="/action_page.php">
-        <label for="breeds">Choose a breed:</label>
+        <label style="font-size: 34px; margin-top: 20px;" for="breeds">Choose a breed:</label>
         <select class="dropdown" name="breedsList" id="breedsList" onchange="getSelectedBreed();">
           <option value="">Select from here</option>
         </select>
@@ -41,8 +45,14 @@
       </form>
     </div>
       
-    <div class="grid-container">
-        <div class="grid-item"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+     
+        </div>
+      </div>
     </div>
 </body>
 </html>

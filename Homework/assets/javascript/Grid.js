@@ -32,19 +32,20 @@ function getSelectedBreed(){
     .then(data => {
         console.log(data)
         const html = data.map(cat => {
-            return `<h2>Name: ${cat.breeds[0].name}<h2> 
-                    <h3>Origin: ${cat.breeds[0].origin}<h3>
-                    <p>Description: ${cat.breeds[0].description}</p>
-                    <img src="${cat.url}" width="200" height="200"/>`
+            return `
+                    <div class="col">
+                        <h1 style="color:#74BBFC; font-size:35px font-family:fantasy">Name: ${cat.breeds[0].name}<h2>
+                        <h3 style="color:#74BBFC; font-size:25px font-family:fantasy">Origin: ${cat.breeds[0].origin}<h3>
+                        <h4 style="color:#74BBFC; font-size:15px font-family:fantasy"><em>Description: ${cat.breeds[0].description}</em><h4>
+                        </div>
+                        <div class="col">
+                        <img src="${cat.url}" width="500" height="400" style="border-radius=15%;"/>
+                    </div>
+                    `
         }).join(" ");
         console.log(html);
-        document.querySelector('.grid-item').innerHTML = html; 
+        document.querySelector('.row').innerHTML = html; 
     }).catch(error => {
         console.log(error);
     })
-};
-
-function getSelectValue(){
-    var selectedValue = document.getElementById("breedsList").value;
-    console.log(selectedValue);
 };
