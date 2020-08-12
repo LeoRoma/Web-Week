@@ -26,15 +26,23 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Pricing</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
+          
           </ul>
         </div>
     </nav>
 
+    <div class="container">
+      <form action="/action_page.php">
+        <label for="breeds">Choose a breed:</label>
+        <select class="dropdown" name="breedsList" id="breedsList" onchange="getSelectedBreed();">
+          <option value="">Select from here</option>
+        </select>
+        <br><br>
+      </form>
+    </div>
+      
     <div class="grid-container">
-        <div class="grid-item">1</div>
+        <div class="grid-item"></div>
     </div>
 </body>
 </html>
