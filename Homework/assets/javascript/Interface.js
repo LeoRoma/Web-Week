@@ -21,17 +21,19 @@ $(function () {
         }
     });
 
-    $.ajax({
-        type: 'GET',
-        url: 'http://cors-anywhere.herokuapp.com/localhost:44355/api/Students',
-        success: function(results){
-            var students = results.results;
-
-            console.log(students);
-        }
-    })
 });
 
 
+
+fetch('http://api.thecatapi.com/v1/breeds?f16ad962-557b-4deb-b7ab-626cc52a45f9')
+.then(response => response.json())
+.then(json => console.log(json));
+
+function getCats(){
+    fetch('http://api.thecatapi.com/v1/breeds?f16ad962-557b-4deb-b7ab-626cc52a45f9')
+    .then(response => response.json())
+    .then(json => {document.getElementById('data').innerHTML=JSON.stringify(json)}
+    );
+}
 
 
