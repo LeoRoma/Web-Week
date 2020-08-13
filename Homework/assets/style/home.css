@@ -1,0 +1,63 @@
+.navbar {
+    background-color:#6F91F2;
+    background-image: none;
+    background-repeat: no-repeat;
+    margin-left:10vh;
+    margin-right:10vh;
+}
+
+.container{
+    margin-top:3vh;
+    align-content: center;
+    text-align: center;
+    background-color:#EAF9F9;
+    padding: 3em;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+body{
+    background-color: #E1FAE3;
+}
+button#emcee
+{
+    position: relative;
+    z-index: 2;   
+}
+
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+div.container.fixed{
+    position:fixed;
+    top:0;
+    left:0;
+}
+/* Absolute position is relative to the container directly */
+div.container.absolute{
+    position:absolute;
+    margin-top:100px;
+}
+div.container.relative{
+    margin-top:100px;
+    background-color:#f44;
+}
+
+div.container:hover{
+    font:1.5em;
+}
+/* This is very useful with buttons to change the background colour and even to change the cursor to show the hand icon which tells the user this is a clickable item
+CSS Transition
+We can also transition from one effect to another */
+div.container {
+    width:450px;
+    transition:width 2s;  
+    border-color: blue;
+    border-style: solid; 
+}
+
+div.container:hover{
+    width:900px;
+}
