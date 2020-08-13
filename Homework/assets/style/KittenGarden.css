@@ -1,0 +1,27 @@
+.navbar {
+  background-color:#6F91F2;
+  background-image: none;
+  background-repeat: no-repeat;
+  margin-left:10vh;
+  margin-right:10vh;
+}
+
+body{
+  background-color: #E8EDE8;
+}
+.row{
+  border-color:#74BBFC;
+  border-style: solid;
+  padding: 2vmin;
+  border-radius: 15px;
+  background-color: #D9EDFF;
+}
+.col{
+  padding:2vmin;
+  
+}
+.container{
+  margin-top:3vh;
+  text-align: center;
+}
+

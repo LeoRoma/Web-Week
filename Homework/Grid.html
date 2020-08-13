@@ -7,52 +7,50 @@
     <link rel="stylesheet" type="text/css" href="./assets/style/grid.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./assets/javascript/Grid.js"></script>
-    <title>Grid</title>
+    <title>Document</title>
 </head>
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">Omni Pages</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Grid.html">Grid</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Gallery.html">Gallery</a>
-          </li>
-
-        </ul>
-      </div>
-  </nav>
-
-
-    
-    <div class="container">
-      <h1 style="font-size: 55px;">Kitten Garden</h1>
-      <form action="/action_page.php">
-        <label style="font-size: 34px; margin-top: 20px;" for="breeds">Choose a breed:</label>
-        <select class="dropdown" name="breedsList" id="breedsList" onchange="getSelectedBreed();">
-          <option value="">Select from here</option>
-        </select>
-        <br><br>
-      </form>
-    </div>
-      
-    <div class="container">
-      <div class="row">
-        <div class="col">
+        <a class="navbar-brand" href="#">Omni Pages</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="KittenGarden.html">Kitten Garden</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Grid.html">Grid</a>
+            </li>
+  
+          </ul>
         </div>
-        <div class="col">
-     
+    </nav>
+    <div>
+        <div class="header">
+            <h1>The Leo Times</h1>
         </div>
-      </div>
-    </div>
+        <div class="container">
+            
+            <div class="grid-container">
+                <div class="grid-item1">1</div>
+                <div class="grid-item2">2</div>
+                <div class="grid-item3">3</div>  
+            </div>
+            <div class="grid-container2">
+                <div class="grid-item4"></div>
+                <div class="grid-item5"></div>
+                <div class="grid-item6"></div>
+                <div class="grid-item7"></div>
+            </div> 
+        </div>
+        
 </body>
 </html>
