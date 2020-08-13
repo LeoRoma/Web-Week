@@ -33,5 +33,9 @@ npm install - g @vue/cli
 
 vue create test-app // Install router and Typescript
 cd test-app
+
+npm install -g npm
+npm install -g yarn
+
 npm run serve or yarn serve
 ```
