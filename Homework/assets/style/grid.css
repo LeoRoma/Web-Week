@@ -1,27 +1,105 @@
 .navbar {
-  background-color:#6F91F2;
-  background-image: none;
-  background-repeat: no-repeat;
-  margin-left:10vh;
-  margin-right:10vh;
+   
+    background-image: none;
+    background-repeat: no-repeat;
+    margin-left:6vh;
+    margin-right:6vh;
+}
+
+.header{
+    text-align: center;
+    margin-top: 15px;
+}
+.header > h1{
+    font-size: 60px;
+    font-family: Chomsky;
 }
 
 body{
-  background-color: #E8EDE8;
+    background-color: lightgrey;
 }
-.row{
-  border-color:#74BBFC;
-  border-style: solid;
-  padding: 2vmin;
-  border-radius: 15px;
-  background-color: #D9EDFF;
-}
-.col{
-  padding:2vmin;
-  
-}
-.container{
-  margin-top:3vh;
-  text-align: center;
+@font-face {
+    font-family:Chomsky;
+
+    src: url(../fonts/Chomsky.otf);
+
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    height: 25em;
+    width:110em;
+    text-align: center;
+}
+.grid-item1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    width: 36em;
+    height: 26em;
+    text-align: center;
+}
+
+.grid-item2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    height: 26em;
+    width: 36.5em;
+    text-align: center;
+}
+.grid-item3 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    height: 26em;
+    width: 36.5em;
+    text-align: center;
+}
+.grid-item4 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    width: 27.5em;
+    height: 21em;
+    text-align: center;
+}
+
+.grid-container2 {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    height: 21em;
+    width:110em;
+}
+.grid-item5 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    width: 27.5em;
+    height: 21em;
+    text-align: center;
+}.grid-item6 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    width: 27em;
+    height: 21em;
+    text-align: center;
+}
+.grid-item7 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    width: 27em;
+    height: 21em;
+    text-align: center;
+}
+
+.container{
+    margin: 2em;
+    
+}
