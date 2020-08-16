@@ -1,11 +1,16 @@
 import React, {Component} from 'react';
 import Navbar from './Navbar';
+import DisplayCustomers from './DisplayCustomers';
 
 class MainPage extends Component {
+
+
     render() {
         return(
-            <Navbar />
-         
+            <div>
+                <Navbar />
+                <DisplayCustomers />
+            </div>    
         )
     } 
 };
