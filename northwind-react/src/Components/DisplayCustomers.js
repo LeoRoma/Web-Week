@@ -24,7 +24,7 @@ const DisplayCustomers = ({customers, deleteCustomer, handleCustomerDetailsShowC
                 </MDBTableHead>
                     {customers.map((customer, index) => 
                         <Customer 
-                            index={index}
+                            index={index + 1}
                             customerName={customer.customerName}
                             contactName={customer.contactName}
                             companyName={customer.companyName}
