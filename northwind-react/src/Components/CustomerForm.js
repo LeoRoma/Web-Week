@@ -81,8 +81,10 @@ class CustomerForm extends Component{
             })
         })
         .then(response => response.json())
-        .then(customer => this.props.addCustomer(customer))
         .then(form.reset());
+        setTimeout(function () {
+            window.location.reload(false);
+          }, 500)
     }
 
     render(){

@@ -2,8 +2,8 @@ import React from 'react';
 import Customer from './Customer';
 import { MDBTable, MDBTableHead } from 'mdbreact';
 
-const DisplayCustomers = ({customers}) => {
-    console.log(customers)
+const DisplayCustomers = ({customers, deleteCustomer}) => {
+    
     return(
         <div>
             <MDBTable>
@@ -34,6 +34,8 @@ const DisplayCustomers = ({customers}) => {
                             country={customer.country}
                             phone={customer.phone}
                             fax={customer.fax}
+                            customerId={customer.customerId}
+                            deleteCustomer={deleteCustomer}
                         />
                     )}
               </MDBTable>

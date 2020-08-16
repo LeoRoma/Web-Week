@@ -22,10 +22,11 @@ class MainPage extends Component {
             <div>
                 <Navbar />
                 <button onClick={() => this.handleShowChange()}>Add new Customer</button>
-                {this.state.addNewCustomerPageIsShown? <CustomerForm addCustomer={this.props.addCustomer}/> : null}
-                <DisplayCustomers customers={this.props.customers}/>
-                
-               
+                {this.state.addNewCustomerPageIsShown? <CustomerForm /> : null}
+                <DisplayCustomers 
+                    customers={this.props.customers}
+                    deleteCustomer={this.props.deleteCustomer}
+                />
             </div>    
         )
     } 

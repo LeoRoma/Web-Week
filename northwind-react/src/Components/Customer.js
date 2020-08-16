@@ -1,7 +1,7 @@
 import React from 'react';
 import { MDBTableBody } from 'mdbreact';
 
-const Customer = ({index, contactName, companyName, contactTitle, address, city, postalCode, country, phone, fax}) => {
+const Customer = ({index, contactName, companyName, contactTitle, address, city, postalCode, country, phone, fax, deleteCustomer, customerId}) => {
 
     return(
             <MDBTableBody> 
@@ -15,7 +15,8 @@ const Customer = ({index, contactName, companyName, contactTitle, address, city,
                 <td>{postalCode}</td>
                 <td>{country}</td>
                 <td>{phone}</td>
-                <td>{fax}</td>              
+                <td>{fax}</td> 
+                <button onClick={() => deleteCustomer(customerId)}>Delete</button>             
             </tr>
             </MDBTableBody> 
     )
