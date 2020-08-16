@@ -37,21 +37,19 @@ class Navbar extends Component {
                     </MDBDropdownMenu>
                   </MDBDropdown>
                 </MDBNavItem>
-                <MDBNavItem>
-                  <MDBNavLink className="waves-effect waves-light" to="https://github.com/LeoRoma">
+                
+
+              </MDBNavbarNav>
+              <MDBNavbarNav right>
+              <MDBNavItem>
+                  <MDBNavLink className="waves-effect black-text" to="https://github.com/LeoRoma">
                     <MDBIcon fab icon="github" />
                   </MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink className="waves-effect waves-light" to="https://www.linkedin.com/in/jiatian-leo-xia-9b2490191/">
+                  <MDBNavLink className="waves-effect black-text" to="https://www.linkedin.com/in/jiatian-leo-xia-9b2490191/">
                     <MDBIcon fab icon="linkedin" />
                   </MDBNavLink>
-                </MDBNavItem>
-
-              </MDBNavbarNav>
-              <MDBNavbarNav right>
-                <MDBNavItem active>
-                  <MDBNavLink to="#">Home</MDBNavLink>
                 </MDBNavItem>
               </MDBNavbarNav>
             </MDBCollapse>

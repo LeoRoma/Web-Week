@@ -1,7 +1,22 @@
 import React from 'react';
+import CustomerDetails from './CustomerDetails';
 import { MDBTableBody } from 'mdbreact';
 
-const Customer = ({index, contactName, companyName, contactTitle, address, city, postalCode, country, phone, fax, deleteCustomer, customerId}) => {
+const Customer = ({index, 
+                   contactName, 
+                   companyName, 
+                   contactTitle, 
+                   address, 
+                   city, 
+                   postalCode, 
+                   country, 
+                   phone, 
+                   fax, 
+                   deleteCustomer, 
+                   customerId, 
+                   handleCustomerDetailsShowChange,
+                   customerDetailsIsShown
+                }) => {
 
     return(
             <MDBTableBody> 
@@ -16,7 +31,19 @@ const Customer = ({index, contactName, companyName, contactTitle, address, city,
                 <td>{country}</td>
                 <td>{phone}</td>
                 <td>{fax}</td> 
-                <button onClick={() => deleteCustomer(customerId)}>Delete</button>             
+                {/* <button onClick={() => handleCustomerDetailsShowChange()}>Details</button>     */}
+                <button onClick={() => deleteCustomer(customerId)}>Delete</button> 
+                {/* {customerDetailsIsShown? <CustomerDetails 
+                                            companyName={this.companyName}
+                                            contactName={this.contactName}
+                                            contactTitle={this.contactTitle}
+                                            address={this.address}
+                                            city={this.city}
+                                            postalCode={this.postalCode}
+                                            country={this.country}
+                                            phone={this.phone}
+                                            fax={this.fax}
+                                            /> : null}     */}
             </tr>
             </MDBTableBody> 
     )

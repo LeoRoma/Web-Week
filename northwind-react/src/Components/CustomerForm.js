@@ -90,7 +90,7 @@ class CustomerForm extends Component{
     render(){
         console.log(this.state)
         return(
-            <div className="addForm">
+            <div className="add-form">
             <h3>Add A New Customer</h3>
                 <form className="form" onSubmit={this.handleSubmit}>
                     <input fluid label="Customer Id" placeholder="Customer Id" name="customerId" onChange={this.handleChange}></input>
