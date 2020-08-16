@@ -1,8 +1,8 @@
 import React from 'react';
-import { MDBTable, MDBTableHead, MDBTableBody } from 'mdbreact';
+import { MDBTableBody } from 'mdbreact';
 
 const Customer = ({index, contactName, companyName, contactTitle, address, city, postalCode, country, phone, fax}) => {
-    console.log(index)
+
     return(
             <MDBTableBody> 
             <tr>

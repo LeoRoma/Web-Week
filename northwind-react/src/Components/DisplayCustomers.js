@@ -1,6 +1,6 @@
 import React from 'react';
 import Customer from './Customer';
-import { MDBTable, MDBTableHead, MDBTableBody } from 'mdbreact';
+import { MDBTable, MDBTableHead } from 'mdbreact';
 
 const DisplayCustomers = ({customers}) => {
     console.log(customers)

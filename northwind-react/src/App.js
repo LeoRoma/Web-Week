@@ -20,10 +20,16 @@ class App extends Component{
       .then(customersJson => this.setState({customers: customersJson}))
   }
 
+  addCustomer= (customer) => {
+    this.setState({customers: [...this.state.customers], customer});
+  }
   render(){
     return(
       <div className="App">
-        <MainPage customers={this.state.customers} />
+        <MainPage 
+          customers={this.state.customers} 
+          addCustomer={this.addCustomer}
+        />
       </div>
     )
   }
