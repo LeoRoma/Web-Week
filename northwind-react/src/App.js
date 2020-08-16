@@ -21,10 +21,9 @@ class App extends Component{
   }
 
   render(){
-    console.log(this.state.customers)
     return(
       <div className="App">
-        <MainPage />
+        <MainPage customers={this.state.customers} />
       </div>
     )
   }

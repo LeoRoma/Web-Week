@@ -21,7 +21,7 @@ class Navbar extends Component {
         <Router>
           <MDBNavbar color="transparent" dark expand="md">
             <MDBNavbarBrand>
-              <strong className="white-text">NORTHWIND-REACT</strong>
+              <strong className="black-text">NORTHWIND-REACT</strong>
             </MDBNavbarBrand>
             <MDBNavbarToggler onClick={this.toggleCollapse} />
             <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>

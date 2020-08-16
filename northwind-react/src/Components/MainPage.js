@@ -9,7 +9,7 @@ class MainPage extends Component {
         return(
             <div>
                 <Navbar />
-                <DisplayCustomers />
+                <DisplayCustomers customers={this.props.customers}/>
             </div>    
         )
     } 
