@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 Classes</title>
+</head>
+<body>
+    <h1>ES6 Classes in Javascript</h1>
+    <p>Before ES6 this was a little clumsy; ES6 has formalise this 'simulation' of real OOP</p>
+
+
+</body>
+<script>
+
+    class Person {
+        constructor(firstName, lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+        getFullName(){
+            return `${this.firstName} ${this.lastName}`;
+        }
+    }
+
+    // Inheritance
+    // class Child extends Person {
+    //     constructor(firstName, firstName, age){
+    //         super(firstName, lastName);
+    //         this.age = age;
+    //     }
+    // }
+    var person = new Person("Leo", "Xia");
+    // var kodomo = new Child("Akachan", "Chan", 2);
+    console.log(person)
+</script>
+
+</html>

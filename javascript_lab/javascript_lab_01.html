@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Elements</title>
+</head>
+<body>
+    <div class="add-div">
+        <h1>Hello World</h1>
+    </div>
+
+    <button onclick="addDiv()">Try it</button>  
+
+    <script>
+        function addDiv() {
+            console.log("hello")
+            var div = document.createElement("new-div");
+            div.innerHTML = "Hello Everybody ";
+            document.body.appendChild(div);
+        }
+    </script>
+</body>
+</html>
